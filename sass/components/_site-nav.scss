@@ -1,0 +1,58 @@
+.nav-list {
+    @include centeredFlex();
+    justify-content: space-between;
+    min-height: 60px;
+}
+
+    .site-nav {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        @media screen and (min-width: 768px) {
+            display: block;
+            @include centeredFlex;
+            margin-left: 93px;
+            
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
+
+.site-nav__item {
+    position: relative;
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $titleTextColor;
+    @extend %header-links;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+
+    &--active {
+        color: $accentColor;
+    }
+
+    &--active::after {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accentColor;
+    }
+}
