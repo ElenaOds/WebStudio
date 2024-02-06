@@ -108,13 +108,6 @@ section {
   letter-spacing: 0.01em;
 }
 
-.modal__field textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
 .modal__field textarea::placeholder, .modal__label {
   font-weight: 400;
   font-size: 12px;
@@ -966,13 +959,6 @@ section {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.form-subscribe__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
 .form-subscribe__input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -1175,18 +1161,11 @@ section {
 .modal__field textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__field textarea:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
 .modal__field textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 @media screen and (min-width: 1200px) {
   .modal__field textarea::-moz-placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-  .modal__field textarea:-ms-input-placeholder {
     font-size: 12px;
     line-height: 1.17;
   }
@@ -1249,8 +1228,7 @@ section {
 
 .policy__link {
   color: #2196F3;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
